@@ -6,21 +6,25 @@ import Education from "./Components/Education";
 import Experience from "./Components/Experience";
 import Project from "./Components/Project";
 import Footer from "./Components/Footer";
+import Contact from "./Components/Contact";
 
 export default function Profile() {
   return (
-    <div className="flex  bg-gray-900 text-green-400">
+    <div className="flex flex-col sm:flex-row bg-gray-900 overflow-hidden">
       {/* Left Sidebar (Fixed) */}
-      <Left />
+      <div>
+        <Left />
+      </div>
 
       {/* Right Content (Scrollable) */}
-      <div className=" ml-[25%] pl-16 pr-40">
+      <div className=" ml-3 sm:ml-[25%]  sm:pl-16 pr-1 sm:pr-30">
         <About />
         <Skill />
         <Experience />
         <Education />
         <Project />
-        <Footer/>
+        <Contact/>
+        <Footer />
       </div>
     </div>
 

@@ -23,7 +23,13 @@ const educationData = [
 export default function EducationSection() {
     return (
         <section className="bg-gray-900 text-gray-300 py-10  border-b-1 border-gray-600">
-            <h2 className=" text-gray-200 text-3xl font-bold mb-8">Education</h2>
+            <div className=" mb-6 sm:mb-8">
+                <h2 className="text-white text-3xl font-bold mb-2">Education</h2>
+                <div className="flex items-center">
+                    <div className="w-2 h-2 border-2 border-white rounded-full"></div>
+                    <div className="ml-2 w-12 border-t-2 border-white"></div>
+                </div>
+            </div>
             <div className="relative border-l border-gray-400 pl-6 space-y-6">
                 {educationData.map((edu, index) => (
                     <div key={index} className="relative">
