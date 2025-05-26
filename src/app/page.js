@@ -19,10 +19,10 @@ export default function Profile() {
       {/* Right Content (Scrollable) */}
       <div className=" ml-3 sm:ml-[25%]  sm:pl-16 pr-1 sm:pr-30">
         <About />
+        <Project />
         <Skill />
         <Experience />
         <Education />
-        <Project />
         <Contact/>
         <Footer />
       </div>

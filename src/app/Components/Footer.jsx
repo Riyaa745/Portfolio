@@ -4,7 +4,7 @@ import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 export default function Footer() {
     return (
-        <footer className="bg-gray-800 py-6 sm:py-10 text-white">
+        <footer className="bg-gray-800 ml-[-9px] py-6 sm:py-10 text-white">
             <div className="container mx-auto text-center px-4 sm:px-10">
                 {/* Social Icons */}
                 <div className="flex space-x-4 sm:space-x-6 my-4 justify-center">

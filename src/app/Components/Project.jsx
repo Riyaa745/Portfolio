@@ -7,7 +7,7 @@ const projects = [
         title: "Personal Portfolio Website",
         description: "A portfolio built using Next.js and Tailwind CSS to showcase skills and projects.",
         github: "https://github.com/Riyaa745/Portfolio",
-        preview: "#",
+        preview: "https://67f009ea67495d553cf971bb--riyasainwalportfolio.netlify.app/",
     },
     {
         title: "Codeware IT Website",
