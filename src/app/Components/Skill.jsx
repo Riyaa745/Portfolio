@@ -3,16 +3,10 @@
 import React, { useState, useEffect } from "react";
 
 const skills = [
-  { name: "HTML", level: 95, color: "bg-blue-500" },
-  { name: "CSS", level: 95, color: "bg-blue-500" },
-  { name: "Javascript", level: 90, color: "bg-blue-500" },
-  { name: "React", level: 90, color: "bg-blue-500" },
-  { name: "Next JS", level: 80, color: "bg-blue-500" },
-  { name: "Node JS", level: 80, color: "bg-blue-500" },
-  { name: "Express", level: 80, color: "bg-blue-500" },
-  { name: "MongoDB", level: 80, color: "bg-blue-500" },
-  { name: "PhotoShop", level: 90, color: "bg-blue-500" },
-  { name: "CorelDraw", level: 90, color: "bg-blue-500" },
+  { name: "Frontend/Design", level: 95, color: "bg-blue-500" },
+  { name: "Backend", level: 95, color: "bg-blue-500" },
+  { name: "Programming", level: 90, color: "bg-blue-500" },
+
 ];
 
 const Skills = () => {
@@ -43,14 +37,14 @@ const Skills = () => {
           <div className="ml-2 w-12 border-t-2 border-white"></div>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="leading-10">
         {animatedSkills.map((skill, index) => (
           <div key={index}>
-            <div className="flex justify-between mb-1">
-              <span>{skill.name}</span>
+            <div className="flex items-center gap-[10.5rem] sm:gap-[27.5rem] mb-1">
+              <span className="w-2">{skill.name}</span>
               <span>{skill.animatedLevel}%</span>
             </div>
-            <div className="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+            <div className="w-1/2 bg-gray-700 rounded-full h-2 overflow-hidden">
               <div
                 className={`${skill.color} h-2 rounded-full transition-all duration-1000 ease-in-out`}
                 style={{ width: `${skill.animatedLevel}%` }}
